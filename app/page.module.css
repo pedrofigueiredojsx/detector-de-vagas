@@ -1,0 +1,268 @@
+.pagina {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+}
+
+.topo {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.selo {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.15);
+  color: #a5b4fc;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.topo h1 {
+  margin: 16px 0 8px;
+  font-size: clamp(28px, 5vw, 40px);
+  line-height: 1.15;
+}
+
+.topo p {
+  margin: 0;
+  color: #93a0bd;
+}
+
+.cartao {
+  background: #121a2f;
+  border: 1px solid #22304f;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.exemplos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #93a0bd;
+  font-size: 14px;
+}
+
+.chip {
+  border: 1px solid #2b3a5e;
+  background: transparent;
+  color: #cbd5f0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.chip:hover {
+  background: #1b2646;
+}
+
+.campo {
+  width: 100%;
+  min-height: 160px;
+  resize: vertical;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #2b3a5e;
+  background: #0d1428;
+  color: inherit;
+  font: inherit;
+}
+
+.campo:focus {
+  outline: 2px solid #6366f1;
+  outline-offset: 1px;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.contador {
+  color: #6b7a99;
+  font-size: 13px;
+}
+
+.botao {
+  border: 0;
+  border-radius: 10px;
+  padding: 11px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  cursor: pointer;
+  transition:
+    transform 0.1s,
+    opacity 0.15s;
+}
+
+.botao:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.botao:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.erro {
+  margin: 12px 0 0;
+  color: #f87171;
+}
+
+.aviso {
+  margin: 12px 0 0;
+  color: #6b7a99;
+  font-size: 12px;
+}
+
+/* cor do nível de risco */
+.baixo {
+  --cor: #22c55e;
+}
+.medio {
+  --cor: #f59e0b;
+}
+.alto {
+  --cor: #ef4444;
+}
+
+.resultado {
+  border-color: color-mix(in srgb, var(--cor) 45%, #22304f);
+}
+
+.placar {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.nota {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--cor);
+}
+
+.nota small {
+  font-size: 20px;
+  font-weight: 600;
+  color: #6b7a99;
+}
+
+.rotulo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.badgeIa {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(139, 92, 246, 0.18);
+  color: #c4b5fd;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.barra {
+  height: 8px;
+  border-radius: 999px;
+  background: #0d1428;
+  margin: 16px 0 20px;
+  overflow: hidden;
+}
+
+.preenchimento {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--cor);
+  transition: width 0.5s ease;
+}
+
+.titulo {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: #93a0bd;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.post {
+  white-space: pre-wrap;
+  background: #0d1428;
+  border: 1px solid #22304f;
+  border-radius: 12px;
+  padding: 14px;
+  margin: 0 0 16px;
+  color: #cbd5f0;
+}
+
+.post mark {
+  color: inherit;
+  padding: 1px 3px;
+  border-radius: 4px;
+}
+
+.marcaAlta {
+  background: rgba(239, 68, 68, 0.35);
+}
+.marcaMedia {
+  background: rgba(245, 158, 11, 0.35);
+}
+.marcaBaixa {
+  background: rgba(250, 204, 21, 0.25);
+}
+
+.sinais {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.sinal {
+  background: #0d1428;
+  border: 1px solid #22304f;
+  border-left: 4px solid var(--cor-sinal);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.sinalAlta {
+  --cor-sinal: #ef4444;
+}
+.sinalMedia {
+  --cor-sinal: #f59e0b;
+}
+.sinalBaixa {
+  --cor-sinal: #facc15;
+}
+
+.trecho {
+  margin-top: 2px;
+  color: #93a0bd;
+  font-size: 13px;
+}
+
+.vazio {
+  margin: 0;
+  color: #93a0bd;
+}
+
+.notaFinal {
+  margin-top: 16px;
+  color: #6b7a99;
+  font-size: 12px;
+}
